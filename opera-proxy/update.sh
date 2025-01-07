@@ -10,7 +10,7 @@ ARCH=arm64
 # Get latest version
 VER="$(curl -fs -o/dev/null -w %{redirect_url} https://github.com/Snawoot/opera-proxy/releases/latest | cut -b 54-)"
 
-echo "Downloading binaries..."
+echo -e "Downloading binaries... \nVersion: $VER"
 curl -LS https://github.com/Snawoot/opera-proxy/releases/download/v$VER/opera-proxy.linux-$ARCH -o files/usr/bin/opera-proxy
 chmod +x files/usr/bin/opera-proxy
 
