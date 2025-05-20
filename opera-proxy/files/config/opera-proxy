@@ -1,10 +1,14 @@
-config instance 'default'
+config instance 'Europe'
 	option enabled '1'
 	option args '-bind-address 0.0.0.0:28080 -socks-mode -country EU -verbosity 50'
 
 config instance 'Americas'
 	option enabled '1'
-	option args '-bind-address 0.0.0.0:18080 -socks-mode -country AM -verbosity 50'
+	option args '-bind-address 0.0.0.0:18080 -country AM -verbosity 50'
+
+#config instance 'Asia'
+#	option enabled '1'
+#	option args '-bind-address 0.0.0.0:38080 -socks-mode -country AS -verbosity 50'
 
 # --api-address			String		override IP address of api2.sec-tunnel.com
 # --api-client-type		String		client type reported to SurfEasy API (default "se0316")
