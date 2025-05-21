@@ -1,0 +1,43 @@
+config instance 'Europe'
+	option enabled '1'
+	option args '-bind-address 0.0.0.0:28080 -country EU -verbosity 50'
+
+config instance 'Americas'
+	option enabled '1'
+	option args '-bind-address 0.0.0.0:18080 -country AM -verbosity 50'
+
+#config instance 'Asia'
+#	option enabled '1'
+#	option args '-bind-address 0.0.0.0:38080 -country AS -verbosity 50'
+
+# --api-address			String		override IP address of api2.sec-tunnel.com
+# --api-client-type		String		client type reported to SurfEasy API (default "se0316")
+# --api-client-version		String		client version reported to SurfEasy API (default "Stable 114.0.5282.21")
+# --api-login			String		SurfEasy API login (default "se0316")
+# --api-password		String		SurfEasy API password (default "SILrMEPBmJuhomxWkfm3JalqHX2Eheg1YhlEZiMh8II")
+# --api-user-agent		String		user agent reported to SurfEasy API (default "Mozilla/5.0 (Windows NT 10.0; Win64; x64) 
+#						AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0")
+# --bind-address		String		proxy listen address (default "127.0.0.1:18080")
+# --bootstrap-dns		String		Comma-separated list of DNS/DoH/DoT/DoQ resolvers for initial discovery of SurfEasy API address.
+#						See https://github.com/ameshkov/dnslookup/ for upstream DNS URL format. 
+#						Examples: https://1.1.1.1/dns-query, quic://dns.adguard.com (default https://1.1.1.3/dns-query,
+#						https://8.8.8.8/dns-query,https://dns.google/dns-query,https://security.cloudflare-dns.com/dns-query,
+#						https://fidelity.vm-0.com/q,https://wikimedia-dns.org/dns-query,https://dns.adguard-dns.com/dns-query,
+#						https://dns.quad9.net/dns-query,https://doh.cleanbrowsing.org/doh/adult-filter/)
+# --cafile			String		use custom CA certificate bundle file
+# --certchain-workaround	Boolean		add bundled cross-signed intermediate cert to certchain to make it check out on old systems (default true)
+# --country			String		desired proxy location (default "EU") (EU, AM, AS)
+# --fake-SNI			String		domain name to use as SNI in communications with servers
+# --init-retries		Number		number of attempts for initialization steps, zero for unlimited retry
+# --init-retry-interval		Duration	delay between initialization retries (default 5s)
+# --list-countries		-		list available countries and exit
+# --list-proxies		-		output proxy list and exit
+# --override-proxy-address	String		use fixed proxy address instead of server address returned by SurfEasy API
+# --proxy			String		sets base proxy to use for all dial-outs. Format: <http|https|socks5|socks5h>://[login:password@]host[:port] 
+#						Examples: http://user:password@192.168.1.1:3128, socks5://10.0.0.1:1080
+# --refresh			Duration	login refresh interval (default 4h0m0s)
+# --refresh-retry		Duration	login refresh retry interval (default 5s)
+# --timeout			Duration	timeout for network operations (default 10s)
+# --verbosity			Number		logging verbosity (10 - debug, 20 - info, 30 - warning, 40 - error, 50 - critical) (default 20)
+# --version			-		show program version and exit
+# --socks-mode			-		listen for SOCKS requests instead of HTTP

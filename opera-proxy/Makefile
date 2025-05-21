@@ -29,7 +29,7 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) ./files/usr/bin/opera-proxy $(1)/usr/bin/
 	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_CONF) ./files/config/opera-proxy $(1)/etc/config/opera-proxy
+	$(INSTALL_CONF) ./files/etc/config/opera-proxy $(1)/etc/config/
 endef
 
 $(eval $(call BuildPackage,opera-proxy))
