@@ -9,12 +9,12 @@ PKG_MAINTAINER:=Snawoot <vladislav-ex-gh@vm-0.com>
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-    SECTION:=net
-    CATEGORY:=Network
+	SECTION:=net
+	CATEGORY:=Network
 	SUBMENU:=VPN
-    TITLE:=Opera Proxy client
-    URL:=https://github.com/Snawoot/opera-proxy
-    PKGARCH:=aarch64_cortex-a53
+	TITLE:=Opera Proxy client
+	URL:=https://github.com/Snawoot/opera-proxy
+	PKGARCH:=aarch64_cortex-a53
 endef
 
 define Build/Configure
